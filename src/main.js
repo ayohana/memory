@@ -12,6 +12,7 @@ $(document).ready(function(){
   $(".card").click(function(event){
     event.preventDefault();
     var index = this.id;
-    console.log(game.deck.getCardValue(index));
+    var value = game.deck.getCardValue(index);
+    game.getSelections(value);
   });
 });
